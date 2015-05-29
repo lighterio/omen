@@ -1,0 +1,42 @@
+{
+  "name": "omen",
+  "version": "0.0.0",
+  "description": "Omen is a distributed host process coordinator",
+  "dependencies": {
+    "leveldown": "^1.0.1"
+  },
+  "devDependencies": {
+    "exam": "^1.0.0"
+  },
+  "keywords": [
+    "omen",
+    "hash",
+    "ring",
+    "distributed",
+    "data",
+    "cloud",
+    "storage",
+    "cache",
+    "cluster",
+    "service",
+    "services"
+  ],
+  "main": "omen.js",
+  "engines": {
+    "node": ">=0.2.6"
+  },
+  "scripts": {
+    "test": "./node_modules/exam/exam.js",
+    "cover": "./node_modules/exam/exam-cover.js",
+    "report": "open coverage/lcov-report/index.html",
+    "coveralls": "./node_modules/exam/exam-coveralls.js"
+  },
+  "repository": "https://github.com/lighterio/omen.git",
+  "bugs": "https://github.com/lighterio/omen/issues",
+  "homepage": "http://lighter.io/omen",
+  "author": "Sam Eubank <sameubank@gmail.com>",
+  "contributors": [
+    "Sam Eubank <sameubank@gmail.com>"
+  ],
+  "license": "MIT"
+}
