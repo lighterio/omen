@@ -8,26 +8,26 @@
  */
 
 var permute = module.exports = function (input) {
-  var permutations;
-  input = '' + input;
+  var permutations
+  input = '' + input
   input.replace(/^(.*)\(([^\)]+)\)(.*)$/, function (match, start, spec, end) {
-    var variations;
+    var variations
     spec.replace(/([0-9]+)\-([0-9]+)/, function (match, first, last) {
-      variations = [];
-      first *= 1;
-      last *= 1;
+      variations = []
+      first *= 1
+      last *= 1
       for (var n = first; n <= last; n++) {
-        variations.push(n);
+        variations.push(n)
       }
-    });
-    variations = variations || spec.split('|');
+    })
+    variations = variations || spec.split('|')
 
-    permutations = [];
+    permutations = []
     variations.forEach(function (variation) {
       permute(start + variation + end).forEach(function (permutation) {
-        permutations.push(permutation);
-      });
-    });
-  });
-  return permutations || [input];
-};
+        permutations.push(permutation)
+      })
+    })
+  })
+  return permutations || [input]
+}

@@ -94,20 +94,15 @@ lists or a start and end number for a sequence. So if you had 10 hosts
 across 2 US locales, your host pattern might look like:
 `"omen-us(east|west)-(1-5).domain.tld"`.
 
-### options.isClientOnly (Default: false
+### options.isClientOnly (Default: false)
 If the current process needs to access the ring, but will not store data
 as a peer, it should set `isClientOnly` to true. The default is **false**.
 
 
-### options.discoverDelay (Default: 1e3
-The discover delay is the number of milliseconds a peer waits between
-attempts to discover all peers. The default is **1,000** (one second).
-
-
-### options.heartbeatDelay
-The heartbeat delay is the number of milliseconds between heartbeat
-requests which ping a random peer in order to measure latency. The default
-is **100** milliseconds.
+### options.pingDelay (Default: 1e3)
+The ping delay is the number of milliseconds a peer waits between
+attempts to discover all peers or heartbeats to a peer to verify the
+connection and to measure latency. The default is **1,000** (one second).
 
 ### options.log
 Omen can use a custom log. The default is **console**.
