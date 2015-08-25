@@ -6,7 +6,7 @@
     "leveldown": "^1.0.1"
   },
   "devDependencies": {
-    "exam": "^1.0.0"
+    "exam": "git+https://github.com/zerious/exam.git"
   },
   "keywords": [
     "omen",
