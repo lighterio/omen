@@ -1,12 +1,12 @@
 {
   "name": "omen",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Omen is a distributed host process coordinator",
   "dependencies": {
     "leveldown": "^1.0.1"
   },
   "devDependencies": {
-    "exam": "git+https://github.com/zerious/exam.git"
+    "exam": "0.3.0"
   },
   "keywords": [
     "omen",
