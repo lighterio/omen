@@ -31,13 +31,6 @@ var omen = module.exports = function (options) {
   }
 }
 
-// Expose the version number, but only load package JSON if it's requested.
-Object.defineProperty(omen, 'version', {
-  get: function () {
-    return require(__dirname + '/package.json').version
-  }
-})
-
 // Fill in any string color functions that don't exist.
 function returnThis () { return this }
 
